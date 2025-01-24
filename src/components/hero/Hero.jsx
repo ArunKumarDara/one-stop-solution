@@ -11,23 +11,33 @@ const Hero = () => {
       grid grid-cols-1 md:grid-cols-2 min-h-[650px] relative mt-[4rem]"
       >
         <div className="flex flex-col justify-center py-14 md:py-0 ">
-          <div className="text-center md:text-left space-y-6">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-relaxed xl:leading-normal">
+          <motion.div
+            initial={{ opacity: 0, x: -100 }}
+            animate={{ opacity: 2, x: 0 }}
+            transition={{ duration: 2 }}
+            className="text-center md:text-left space-y-6"
+          >
+            <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">
               Your One Stop Solution for{" "}
-              <span className="text-[#23856D]">Car Rentals</span> &{" "}
-              <span className="text-[#23856D]">Home Repairs</span>!
+              <span className="text-[#1A92D6]">Car Rentals</span> &{" "}
+              <span className="text-[#1A92D6]">Home Repairs.</span>
             </h1>
             <p className="text-gray-600 xl:max-w-[500px]">
               Reliable, affordable and hassle-free services at your fingertips
             </p>
-            <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }}>
-              <button className="bg-[#23856D] text-white font-semibold py-2 px-4 cursor-pointer rounded-4xl">
+            <div>
+              <button className="bg-[#1A92D6] text-white font-semibold py-2 px-4 cursor-pointer rounded-4xl">
                 Explore our Services
               </button>
-            </motion.div>
-          </div>
+            </div>
+          </motion.div>
         </div>
-        <div className="relative flex md:flex-col md:items-start items-center justify-center">
+        <motion.div
+          initial={{ opacity: 0, x: 100 }}
+          animate={{ opacity: 2, x: 0 }}
+          transition={{ duration: 2 }}
+          className="relative flex md:flex-col md:items-start items-center justify-center"
+        >
           <img
             src={carRental}
             alt="Car Rentals"
@@ -38,7 +48,7 @@ const Hero = () => {
             alt="Home Repair"
             className="w-[200px] md:w-[275px] xl:w-[350px] md:absolute top-56 right-0"
           />
-        </div>
+        </motion.div>
       </div>
     </section>
   );
