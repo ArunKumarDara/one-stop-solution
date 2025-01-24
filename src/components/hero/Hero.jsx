@@ -8,7 +8,7 @@ const Hero = () => {
       <div
         className="container p-[1rem] sm:p-[2rem] lg:px-[4rem] lg:py-[2rem] xl:p-[5rem] 
         xl:py-[2rem] 2xl:p-[6rem] 2xl:py-[2rem] 
-      grid grid-cols-1 md:grid-cols-2 min-h-[650px] relative mt-[4rem]"
+      grid grid-cols-1 md:grid-cols-2 min-h-[600px] relative mt-[4rem]"
       >
         <div className="flex flex-col justify-center py-14 md:py-0 ">
           <motion.div
@@ -22,7 +22,7 @@ const Hero = () => {
               <span className="text-[#1A92D6]">Car Rentals</span> &{" "}
               <span className="text-[#1A92D6]">Home Repairs </span>!
             </h1>
-            <p className="text-[#737373] font-montserrat text-xl font-normal leading-[25px] tracking-[0.2px]">
+            <p className="text-[#737373] font-montserrat font-normal leading-[25px] tracking-[0.2px]">
               Reliable, affordable and hassle-free services at your fingertips
             </p>
             <div>
