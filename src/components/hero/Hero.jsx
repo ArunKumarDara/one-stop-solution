@@ -17,12 +17,12 @@ const Hero = () => {
             transition={{ duration: 2 }}
             className="text-center md:text-left space-y-6"
           >
-            <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">
+            <h1 className="text-4xl text-[#252B42] md:text-5xl font-bold mb-4 leading-tight">
               Your One Stop Solution for{" "}
               <span className="text-[#1A92D6]">Car Rentals</span> &{" "}
-              <span className="text-[#1A92D6]">Home Repairs.</span>
+              <span className="text-[#1A92D6]">Home Repairs </span>!
             </h1>
-            <p className="text-gray-600 xl:max-w-[500px]">
+            <p className="text-[#737373] font-montserrat text-xl font-normal leading-[25px] tracking-[0.2px]">
               Reliable, affordable and hassle-free services at your fingertips
             </p>
             <div>
