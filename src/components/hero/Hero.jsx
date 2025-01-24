@@ -2,6 +2,7 @@ import * as motion from "motion/react-client";
 import carRental from "../../assets/car-rentals.png";
 import homeRepair from "../../assets/house-services.png";
 import { IoIosArrowRoundForward } from "react-icons/io";
+import { Link } from "react-scroll";
 
 export const FadeUp = (delay) => {
   return {
@@ -25,7 +26,7 @@ export const FadeUp = (delay) => {
 
 const Hero = () => {
   return (
-    <section>
+    <section id="home">
       <div
         className="container bg-cover bg-center bg-no-repeat p-[1rem] sm:p-[2rem] lg:px-[4rem] lg:py-[2rem] xl:p-[5rem] 
         xl:py-[2rem] 2xl:p-[6rem] 2xl:py-[2rem] 
@@ -57,9 +58,20 @@ const Hero = () => {
               animate="animate"
               className="flex justify-center md:justify-start"
             >
-              <button className="bg-[#1A92D6] text-white font-semibold py-2 px-4 cursor-pointer rounded-4xl flex items-center gap-2 group">
-                Explore our Services{" "}
-                <IoIosArrowRoundForward className="text-xl group-hover:translate-x-2 group-hover:-rotate-45 duration-300" />
+              <button className="bg-[#1A92D6] text-white font-semibold py-2 px-6 cursor-pointer rounded-4xl flex items-center gap-2 group">
+                <Link
+                  to="services"
+                  smooth={true}
+                  duration={500}
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "8px",
+                  }}
+                >
+                  Explore our Services
+                  <IoIosArrowRoundForward className="text-xl group-hover:translate-x-2 group-hover:-rotate-45 duration-300" />
+                </Link>
               </button>
             </motion.div>
           </div>

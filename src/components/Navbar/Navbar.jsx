@@ -4,6 +4,7 @@ import * as motion from "motion/react-client";
 import { MdMenu } from "react-icons/md";
 import { useState } from "react";
 import ResponsiveMenu from "../responsiveMenu/ResponsiveMenu";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,7 +18,17 @@ const Navbar = () => {
         >
           <div className="text-xl flex items-center gap-2 font-bold">
             <ImSortAlphaAsc />
-            <p className="uppercase">home n drive</p>
+            <p className="uppercase">
+              {" "}
+              <Link
+                to="home"
+                smooth={true}
+                duration={500}
+                style={{ cursor: "pointer" }}
+              >
+                home n drive
+              </Link>
+            </p>
           </div>
           <div className="hidden md:block">
             <ul className="flex gap-6 items-center">
@@ -27,12 +38,15 @@ const Navbar = () => {
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.8 }}
                 >
-                  <a
-                    href={menu.link}
+                  <Link
+                    to={menu.link}
+                    smooth={true}
+                    duration={500}
+                    style={{ cursor: "pointer" }}
                     className="text-gray-600 hover:text-[#1A92D6] font-semibold inline-block py-1 px-2"
                   >
                     {menu.title}
-                  </a>
+                  </Link>
                 </motion.li>
               ))}
             </ul>
