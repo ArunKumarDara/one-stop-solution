@@ -1,5 +1,6 @@
 import Hero from "./components/hero/Hero";
 import Navbar from "./components/Navbar/Navbar";
+import Offer from "./components/Offer/Offer";
 // import Services from "./components/Services/Services";
 // import Banner from "./components/Banner/Banner";
 // import Subscribe from "./components/Subscribe/Subscribe";
@@ -11,6 +12,7 @@ const App = () => {
     <div className="overflow-x-hidden">
       <Navbar />
       <Hero />
+      <Offer />
     </div>
   );
 };
