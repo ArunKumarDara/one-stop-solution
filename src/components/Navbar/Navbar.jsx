@@ -9,8 +9,8 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
-      <nav>
-        <div className="p-[1rem] sm:p-[2rem] lg:px-[4rem] lg:py-[2rem] xl:p-[5rem] xl:py-[2rem] 2xl:p-[6rem] 2xl:py-[2rem] flex justify-between items-center py-8">
+      <nav className="fixed top-0 left-0 w-full z-50 bg-white">
+        <div className="p-[1rem] sm:p-[1rem] lg:px-[4rem] lg:py-[1rem] xl:p-[5rem] xl:py-[1rem] 2xl:p-[6rem] 2xl:py-[1rem] flex justify-between items-center py-8">
           <div className="text-xl flex items-center gap-2 font-bold">
             <ImSortAlphaAsc />
             <p className="uppercase">one stop solution</p>
