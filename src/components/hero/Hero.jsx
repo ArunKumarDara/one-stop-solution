@@ -8,7 +8,7 @@ const Hero = () => {
       <div
         className="container p-[1rem] sm:p-[2rem] lg:px-[4rem] lg:py-[2rem] xl:p-[5rem] 
         xl:py-[2rem] 2xl:p-[6rem] 2xl:py-[2rem] 
-      grid grid-cols-1 md:grid-cols-2 min-h-[650px] relative"
+      grid grid-cols-1 md:grid-cols-2 min-h-[650px] relative mt-[4rem]"
       >
         <div className="flex flex-col justify-center py-14 md:py-0 ">
           <div className="text-center md:text-left space-y-6">
