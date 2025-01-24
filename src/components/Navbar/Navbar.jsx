@@ -9,8 +9,8 @@ import { Link } from "react-scroll";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <>
-      <nav className="fixed top-0 left-0 w-full z-50 bg-white">
+    <div>
+      <nav className="fixed top-0 left-0 w-full z-40 bg-white">
         <motion.div
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
@@ -66,7 +66,7 @@ const Navbar = () => {
         </motion.div>
       </nav>
       <ResponsiveMenu isOpen={isOpen} />
-    </>
+    </div>
   );
 };
 
