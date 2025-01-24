@@ -13,7 +13,7 @@ const Navbar = () => {
         <div className="p-[1rem] sm:p-[1rem] lg:px-[4rem] lg:py-[1rem] xl:p-[5rem] xl:py-[1rem] 2xl:p-[6rem] 2xl:py-[1rem] flex justify-between items-center py-8">
           <div className="text-xl flex items-center gap-2 font-bold">
             <ImSortAlphaAsc />
-            <p className="uppercase">one stop solution</p>
+            <p className="uppercase">home n drive</p>
           </div>
           <div className="hidden md:block">
             <ul className="flex gap-6 items-center">
@@ -25,7 +25,7 @@ const Navbar = () => {
                 >
                   <a
                     href={menu.link}
-                    className="text-gray-600 hover:text-[#23856D] font-semibold inline-block py-1 px-2"
+                    className="text-gray-600 hover:text-[#1A92D6] font-semibold inline-block py-1 px-2"
                   >
                     {menu.title}
                   </a>
@@ -38,7 +38,7 @@ const Navbar = () => {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.8 }}
           >
-            <button className="bg-[#23856D] text-white font-semibold py-2 px-4 cursor-pointer rounded-4xl">
+            <button className="bg-[#1A92D6] text-white font-semibold py-2 px-4 cursor-pointer rounded-4xl">
               Whatsapp Us
             </button>
           </motion.div>
