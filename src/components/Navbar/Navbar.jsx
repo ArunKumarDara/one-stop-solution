@@ -10,7 +10,11 @@ const Navbar = () => {
   return (
     <>
       <nav className="fixed top-0 left-0 w-full z-50 bg-white">
-        <div className="p-[1rem] sm:p-[1rem] lg:px-[4rem] lg:py-[1rem] xl:p-[5rem] xl:py-[1rem] 2xl:p-[6rem] 2xl:py-[1rem] flex justify-between items-center py-6">
+        <motion.div
+          initial={{ opacity: 0, y: -50 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="p-[1rem] sm:p-[1rem] lg:px-[4rem] lg:py-[1rem] xl:p-[5rem] xl:py-[1rem] 2xl:p-[6rem] 2xl:py-[1rem] flex justify-between items-center py-6"
+        >
           <div className="text-xl flex items-center gap-2 font-bold">
             <ImSortAlphaAsc />
             <p className="uppercase">home n drive</p>
@@ -45,7 +49,7 @@ const Navbar = () => {
           <div className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
             <MdMenu className="text-3xl cursor-pointer" />
           </div>
-        </div>
+        </motion.div>
       </nav>
       <ResponsiveMenu isOpen={isOpen} />
     </>
