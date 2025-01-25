@@ -6,7 +6,7 @@ const Footer = () => {
     <footer>
       <div
         className="container p-[1rem] sm:p-[2rem] lg:px-[4rem] lg:py-[2rem] xl:p-[5rem] 
-        xl:py-[2rem] 2xl:p-[6rem] 2xl:py-[2rem] max-h-[300px] relative mt-[1rem]"
+        xl:py-[2rem] 2xl:p-[6rem] 2xl:py-[2rem] max-h-[400px] relative mt-[1rem]"
       >
         <Row gutter={[24, 24]} className="flex justify-center items-start">
           <Col sm={12} lg={6}>
