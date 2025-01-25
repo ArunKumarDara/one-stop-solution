@@ -71,9 +71,15 @@ const Offer = () => {
         className="container p-[1rem] sm:p-[2rem] lg:px-[4rem] lg:py-[2rem] xl:p-[5rem] 
         xl:py-[2rem] 2xl:p-[6rem] 2xl:py-[2rem] min-h-[300px] relative mt-[1rem]"
       >
-        <h1 className="text-3xl font-bold text-left pb-10 text-[#252B42]">
+        <motion.h1
+          variants={SlideLeft(0.5)}
+          initial="initial"
+          whileInView={"animate"}
+          viewport={{ once: true }}
+          className="text-3xl font-bold text-left pb-10 text-[#252B42]"
+        >
           Services we provide
-        </h1>
+        </motion.h1>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8">
           {ServicesData.map((service) => (
             <motion.div
