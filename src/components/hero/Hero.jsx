@@ -58,7 +58,7 @@ const Hero = () => {
               animate="animate"
               className="flex justify-center md:justify-start"
             >
-              <button className="bg-[#1A92D6] text-white font-semibold py-2 px-6 cursor-pointer rounded-4xl flex items-center gap-2 group">
+              <button className="hover:bg-[#1A92D6] hover:text-white text-[#1A92D6] border-2 hover:border-[#1A92D6] font-semibold py-2 px-6 cursor-pointer rounded-4xl flex items-center gap-2 group">
                 <Link
                   to="services"
                   smooth={true}
