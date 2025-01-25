@@ -51,15 +51,11 @@ const Navbar = () => {
               ))}
             </ul>
           </div>
-          <motion.div
-            className="hidden md:block"
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.8 }}
-          >
-            <button className="bg-[#1A92D6] text-white font-semibold py-2 px-4 cursor-pointer rounded-4xl">
+          <div className="hidden md:block">
+            <button className="hover:bg-[#1A92D6] hover:text-white text-[#1A92D6] border-2 hover:border-[#1A92D6] font-semibold py-1 px-4 cursor-pointer rounded-4xl">
               Whatsapp Us
             </button>
-          </motion.div>
+          </div>
           <div className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
             <MdMenu className="text-3xl cursor-pointer" />
           </div>
