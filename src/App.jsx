@@ -1,3 +1,4 @@
+import Footer from "./components/Footer/Footer";
 import Hero from "./components/hero/Hero";
 import Navbar from "./components/Navbar/Navbar";
 import Offer from "./components/Offer/Offer";
@@ -7,6 +8,7 @@ const App = () => {
       <Navbar />
       <Hero />
       <Offer />
+      <Footer />
     </div>
   );
 };
