@@ -69,7 +69,7 @@ const Offer = () => {
     <section id="services">
       <div
         className="container p-[1rem] sm:p-[2rem] lg:px-[4rem] lg:py-[2rem] xl:p-[5rem] 
-        xl:py-[2rem] 2xl:p-[6rem] 2xl:py-[2rem] min-h-[600px] relative mt-[1rem]"
+        xl:py-[2rem] 2xl:p-[6rem] 2xl:py-[2rem] min-h-[300px] relative mt-[1rem]"
       >
         <h1 className="text-3xl font-bold text-left pb-10 text-[#252B42]">
           Services we provide
