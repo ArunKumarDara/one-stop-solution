@@ -40,7 +40,7 @@ const ServicesData = [
   },
   {
     id: 6,
-    title: "Home Service",
+    title: "House Cleaning",
     icon: <FaHome />,
     delay: 0.7,
   },
