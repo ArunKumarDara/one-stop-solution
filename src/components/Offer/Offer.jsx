@@ -1,52 +1,47 @@
 import * as motion from "motion/react-client";
-import { BiSupport } from "react-icons/bi";
 import { FaCar } from "react-icons/fa";
 import { FaAmbulance } from "react-icons/fa";
 import { TbAirConditioning } from "react-icons/tb";
 import { GiWashingMachine } from "react-icons/gi";
 import { FaHome } from "react-icons/fa";
+import { MdElectricalServices } from "react-icons/md";
 
 const ServicesData = [
   {
     id: 1,
     title: "Hassle-Free Car Rentals",
-    link: "#",
     icon: <FaCar />,
     delay: 0.2,
   },
   {
     id: 2,
-    title: "Ambulance Services",
-    link: "#",
+    title: "Ambulance Service",
     icon: <FaAmbulance />,
     delay: 0.3,
   },
   {
     id: 3,
     title: "Air Conditioner Repair",
-    link: "#",
     icon: <TbAirConditioning />,
     delay: 0.4,
   },
   {
     id: 4,
     title: "Washing Machine Repair",
-    link: "#",
     icon: <GiWashingMachine />,
     delay: 0.5,
   },
   {
     id: 5,
-    title: "Home Services",
+    title: "Electrical Service",
     link: "#",
-    icon: <FaHome />,
+    icon: <MdElectricalServices />,
     delay: 0.6,
   },
   {
     id: 6,
-    title: "24/7 support",
-    link: "#",
-    icon: <BiSupport />,
+    title: "Home Service",
+    icon: <FaHome />,
     delay: 0.7,
   },
 ];
