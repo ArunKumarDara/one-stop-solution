@@ -35,8 +35,8 @@ const Footer = () => {
           viewport={{ once: true }}
           className="flex flex-col justify-center items-center gap-1"
         >
-          <h1 className="text-2xl font-bold">Get in Touch</h1>
-          <p className="text-[#737373] font-montserrat mb-2">
+          <h1 className="text-2xl font-bold text-center">Get in Touch</h1>
+          <p className="text-[#737373] font-montserrat mb-2 text-center">
             Questions or feedback? we&apos;d love to hear from you.
           </p>
           <div className="flex justify-center items-center gap-12 border border-gray-[#737373] py-3 px-7 rounded-2xl">
@@ -84,7 +84,7 @@ const Footer = () => {
           viewport={{ once: true }}
           className="flex flex-col justify-start items-start"
         >
-          <p className="text-[#737373] font-montserrat">
+          <p className="text-[#737373] font-montserrat text-center">
             Copyright © 2025 Home N Drive. All Rights Reserved.
           </p>
         </motion.div>
