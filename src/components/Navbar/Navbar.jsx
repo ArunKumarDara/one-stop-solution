@@ -8,6 +8,16 @@ import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const openWhatsApp = () => {
+    const phoneNumber = "919100401610";
+    const message = encodeURIComponent(
+      "Hello, I am interested in your services!"
+    );
+    const url = `https://wa.me/${phoneNumber}?text=${message}`;
+    window.open(url, "_blank");
+  };
+
   return (
     <div>
       <nav className="fixed top-0 left-0 w-full z-40 bg-white">
@@ -52,7 +62,10 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="hidden md:block">
-            <button className="hover:bg-[#1A92D6] hover:text-white text-[#1A92D6] border-2 hover:border-[#1A92D6] font-semibold py-1 px-4 cursor-pointer rounded-4xl">
+            <button
+              onClick={openWhatsApp}
+              className="hover:bg-[#1A92D6] hover:text-white text-[#1A92D6] border-2 hover:border-[#1A92D6] font-semibold py-1 px-4 cursor-pointer rounded-4xl"
+            >
               Whatsapp Us
             </button>
           </div>
