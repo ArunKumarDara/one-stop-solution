@@ -107,7 +107,7 @@ const Hero = () => {
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           onClick={openWhatsApp}
-          className="fixed bottom-10 right-10 bg-green-500 p-2 rounded-full shadow-xl cursor-pointer hover:bg-green-600 transition duration-300 z-50"
+          className="fixed bottom-8 right-8 bg-green-500 p-2 rounded-full shadow-xl cursor-pointer hover:bg-green-600 transition duration-300 z-50"
           title="Chat with us on WhatsApp"
         >
           <FaWhatsapp size={32} className="text-white" />
