@@ -3,6 +3,7 @@ import carRental from "../../assets/car-rentals.png";
 import homeRepair from "../../assets/house-services.png";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { Link } from "react-scroll";
+import { FaWhatsapp } from "react-icons/fa";
 
 export const FadeUp = (delay) => {
   return {
@@ -25,6 +26,12 @@ export const FadeUp = (delay) => {
 };
 
 const Hero = () => {
+  const openWhatsApp = () => {
+    const phoneNumber = "919100401610";
+    const message = encodeURIComponent("Hello! I need some help.");
+    const url = `https://wa.me/${phoneNumber}?text=${message}`;
+    window.open(url, "_blank");
+  };
   return (
     <section id="home">
       <div
@@ -92,6 +99,18 @@ const Hero = () => {
             alt="Home Repair"
             className="w-[200px] md:w-[275px] xl:w-[350px] md:absolute top-56 right-0"
           />
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          onClick={openWhatsApp}
+          className="fixed bottom-10 right-10 bg-green-500 p-2 rounded-full shadow-xl cursor-pointer hover:bg-green-600 transition duration-300 z-50"
+          title="Chat with us on WhatsApp"
+        >
+          <FaWhatsapp size={32} className="text-white" />
         </motion.div>
       </div>
     </section>
